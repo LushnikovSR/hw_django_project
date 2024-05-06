@@ -1,0 +1,27 @@
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2171
+"GET /firstapp/ HTTP/1.1" 200 746
+"GET /firstapp/about/ HTTP/1.1" 200 1314
+Not Found: /firstapp/page
+"GET /firstapp/page HTTP/1.1" 404 2465
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2171
+"GET /firstapp/ HTTP/1.1" 200 746
+"GET /firstapp/about/ HTTP/1.1" 200 1314
+"GET /firstapp/about/ HTTP/1.1" 200 1314
+Not Found: /firstapp/page
+"GET /firstapp/page HTTP/1.1" 404 2465
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2171
+"GET /firstapp/about/ HTTP/1.1" 200 1314
+"GET /firstapp/ HTTP/1.1" 200 746
+"GET /firstapp/about/ HTTP/1.1" 200 1314
+Not Found: /firstapp/page
+"GET /firstapp/page HTTP/1.1" 404 2465
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2171
+"GET /firstapp/about/ HTTP/1.1" 200 1314
