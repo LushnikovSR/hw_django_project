@@ -3,15 +3,7 @@ import logging
 from django.http import HttpResponse
 
 
-logging.basicConfig()
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-
-handler = logging.FileHandler("./log/page.log", encoding="utf-8")
-formatter = logging.Formatter(fmt="{levelname} {asctime} {module} {processName} {threadName} {message}", style="{")
-
-handler.setFormatter(formatter)
-logger.addHandler(handler)
 
 
 def index(request):
