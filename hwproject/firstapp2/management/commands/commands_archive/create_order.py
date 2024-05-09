@@ -1,8 +1,5 @@
-import decimal
-
 from django.core.management.base import BaseCommand
 from firstapp2.models import Client, Product, Order
-from . import get_client, get_product
 
 
 class Command(BaseCommand):
