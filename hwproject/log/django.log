@@ -688,3 +688,152 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 "GET /thirdapp/periodorders/2/1/ HTTP/1.1" 200 742
 "GET /thirdapp/periodorders/2/7/ HTTP/1.1" 200 742
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 746
+"GET /app2 HTTP/1.1" 301 0
+"GET /app2/ HTTP/1.1" 200 14
+"GET /app3/ HTTP/1.1" 200 14
+Internal Server Error: /app4/
+Traceback (most recent call last):
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\hwproject\firstapp4\views.py", line 5, in index
+    return render(request, 'firstapp4/index.html')
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: firstapp4/index.html
+"GET /app4/ HTTP/1.1" 500 81094
+C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\hwproject\hwproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /app4/ HTTP/1.1" 200 150
+"GET /app5/ HTTP/1.1" 200 150
+"GET /app6/ HTTP/1.1" 200 150
+"GET /app3/ HTTP/1.1" 200 14
+Not Found: /app2/sdf
+"GET /app2/sdf HTTP/1.1" 404 3018
+Not Found: /app2/1
+"GET /app2/1 HTTP/1.1" 404 3012
+"GET /app2/ HTTP/1.1" 200 14
+Not Found: /app/about
+"GET /app/about HTTP/1.1" 404 2960
+Not Found: /app/about/
+"GET /app/about/ HTTP/1.1" 404 2963
+"GET /about/ HTTP/1.1" 200 1314
+"GET / HTTP/1.1" 200 746
+"GET /about/ HTTP/1.1" 200 1314
+"GET /app2/ HTTP/1.1" 200 14
+C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\hwproject\firstapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /app2/ HTTP/1.1" 200 119
+"GET /app3/ HTTP/1.1" 200 14
+Not Found: /app3/client
+"GET /app3/client HTTP/1.1" 404 3476
+"GET /app3/clientorders/1 HTTP/1.1" 301 0
+"GET /app3/clientorders/1/ HTTP/1.1" 200 474
+Not Found: /app3/cliento
+"GET /app3/cliento HTTP/1.1" 404 3479
+"GET /app3/periodorders/1/7 HTTP/1.1" 301 0
+"GET /app3/periodorders/1/7/ HTTP/1.1" 200 747
+"GET /app3/periodorders/2/7/ HTTP/1.1" 200 742
+"GET /app4 HTTP/1.1" 301 0
+"GET /app4/ HTTP/1.1" 200 150
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 746
+"GET /app4/ HTTP/1.1" 200 352
+"GET /app4/img_up HTTP/1.1" 301 0
+"GET /app4/img_up/ HTTP/1.1" 200 352
+"GET /app4/img_up/ HTTP/1.1" 200 352
+C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\hwproject\firstapp4\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /app4/img_up/ HTTP/1.1" 200 536
+Internal Server Error: /app4/img_up/
+Traceback (most recent call last):
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\hwproject\firstapp4\views.py", line 16, in image_upload
+    if form.is_valid():
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\forms.py", line 337, in _clean_fields
+    value = field.clean(value, bf.initial)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\fields.py", line 689, in clean
+    return super().clean(data)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\fields.py", line 204, in clean
+    value = self.to_python(value)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\fields.py", line 716, in to_python
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+"POST /app4/img_up/ HTTP/1.1" 500 98066
+C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\hwproject\hwproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\hwproject\hwproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /app4/img_up/
+Traceback (most recent call last):
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\hwproject\firstapp4\views.py", line 16, in image_upload
+    if form.is_valid():
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\forms.py", line 337, in _clean_fields
+    value = field.clean(value, bf.initial)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\fields.py", line 689, in clean
+    return super().clean(data)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\fields.py", line 204, in clean
+    value = self.to_python(value)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\fields.py", line 716, in to_python
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+"POST /app4/img_up/ HTTP/1.1" 500 98206
+"GET /app4/img_up HTTP/1.1" 301 0
+"GET /app4/img_up/ HTTP/1.1" 200 536
+Internal Server Error: /app4/img_up/
+Traceback (most recent call last):
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\hwproject\firstapp4\views.py", line 16, in image_upload
+    if form.is_valid():
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\forms.py", line 337, in _clean_fields
+    value = field.clean(value, bf.initial)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\fields.py", line 689, in clean
+    return super().clean(data)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\fields.py", line 204, in clean
+    value = self.to_python(value)
+  File "C:\Users\Lush\Documents\Learning\Цифровые профессии\Фреймворк Django\hw_project\venv\lib\site-packages\django\forms\fields.py", line 716, in to_python
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+"POST /app4/img_up/ HTTP/1.1" 500 98206
+"GET /app4/img_up/ HTTP/1.1" 200 536
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 746
+"GET /app4/img_up/ HTTP/1.1" 200 536
+"POST /app4/img_up/ HTTP/1.1" 200 536
+Watching for file changes with StatReloader
+"GET /app4/prod_up/ HTTP/1.1" 200 1090
